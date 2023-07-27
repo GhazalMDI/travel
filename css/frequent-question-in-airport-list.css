@@ -1,0 +1,150 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    --main-color:#8493f4;
+}
+body{
+    font-family: "shabnam",tahoma;
+    direction: rtl;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url("../font/Shabnam-Bold.eot");
+    src: url("../font/Shabnam.eot");
+    src: url("../font/Shabnam-Bold.ttf") format("truetype");
+    src: url("../font/Shabnam.woff") format("woff");
+}
+input,button{
+    font-family: shabnam;
+}
+section{
+    margin: 0 5%;
+    padding: 10px 50px;
+}
+/* start */
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 0.5px solid var(--main-color);
+    margin: 0 5%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin:  2rem;
+}
+header nav ul li{
+    margin: 0 1rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+header nav button{
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    color: #8493f4;
+    background-color: transparent;
+    transition: all .2s ease-out;
+}
+header nav ul li a:hover{
+    color:#8493f4;
+}
+header nav button:hover{
+    background-color: rgb(35, 128, 204);
+    color: #fff;
+}
+.icon ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.icon ul li{
+    margin: 3px 0.25rem;
+    font-size: large;
+}
+.icon ul li a i{
+    color: black;
+}
+img{
+    border-radius: 6px;
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.box-one{
+    height: auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin: 2rem 0;
+}
+.box-one ul{
+    display: flex;
+    flex-direction: column;
+}
+.box-one ul li{
+    margin:  5px 0;
+    list-style: none;
+}
+.box-one ul li a{
+color: black;
+}
+span{
+    display: inline-block;
+    margin:  2rem 0;
+}
+#footer{
+    margin: 10rem;
+  }
+  .footer-box{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box-container-footer{
+    gap: 6rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+  .box-content-footer ul li{
+    display:block;
+  }
+  .box-content-footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    margin-top: 3px;
+  }
+  .box-content-footer ul li input{
+    padding: 5px 10px;
+    outline: none;
+     border: none;
+     border-radius: 6px;
+     line-height: 20px;
+  }
+  .box-content-footer ul li input:hover{
+    box-shadow: 2px 1px 27px rgb(208, 208, 208);
+    background-color: rgb(238, 236, 236);
+  }
+  .copy-right{
+    height: 4rem;
+    background-color: rgb(238, 236, 236);
+  }
+  .copy-right p{
+    direction: ltr;
+    line-height:4rem; 
+    margin: 0 6px;
+  }

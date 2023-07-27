@@ -1,0 +1,274 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    --main-color:#8493f4;
+}
+body{
+    font-family: "shabnam",tahoma;
+    direction: rtl;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+text-decoration: none;    
+}
+input{
+    font-family: shabnam;
+}
+
+/* general style */
+@font-face {
+    font-family: shabnam;
+    src: url("../font/Shabnam-Bold.eot");
+    src: url("../font/Shabnam.eot");
+    src: url("../font/Shabnam-Bold.ttf") format("truetype");
+    src: url("../font/Shabnam.woff") format("woff");
+}
+#container-top{
+    background-color: var(--main-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    position: sticky;
+}
+#menu-top{
+align-items: center;
+display: flex;
+}
+#menu-top ul{
+    margin:0 80px;
+    display: flex;
+    align-items: center;
+}
+#menu-top ul li{
+    margin-right:  9px;
+}
+#menu-top ul li a{
+    color: orangered;
+    line-height: 5;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+#menu-top ul li a:hover{
+    background-color: orangered;
+    color:#fff;
+}
+#menu-information .box-menu{
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+}
+#menu-information .box-menu *{
+    margin:0 4px ;
+    font-size: 12px;
+    padding: 4px 1px;
+    border-radius: 7px;
+}
+#menu-information .box-menu .pigiri{
+    border: 1px solid orangered;
+    transition: all .5s ease-in;
+}
+#menu-information .box-menu .login{
+    background-color: #fff;
+    transition: all .5s ease-in;
+}
+#menu-information .box-menu .phone{
+    color: #fff;
+}
+#menu-information .box-menu .pigiri a{
+    display: inline-block;
+    color: #fff;
+}
+#menu-information .box-menu .login a{
+    display: inline-block;
+}
+#menu-information .box-menu .pigiri:hover{
+  background-color: orangered;
+  color: #fff;
+}
+#menu-information .box-menu .login:hover{
+    background-color: orange;
+    color: #fff;
+}
+header{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+section{
+margin-top:50px ;
+}
+ .box-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    margin-right: 5px;
+}
+ .box-image{
+    box-shadow: inset 5px 5px 70px black;
+    position: relative;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 6px;
+}
+ .box-image-one{
+    border-radius: 12px;
+    background-image: url(../image/departure-toll.jpg);
+}
+ .box-image-two{
+    background-image: url(../image/kids.jpg);
+    border-radius: 12px;
+}
+.box-image-three{
+    background-image: url(../image/tax-free-1.jpg);
+    border-radius: 12px;
+}
+ .box-image-four{
+    background-position: right;
+  background-image: url(../image/airport-faq-blog.jpg);  
+  border-radius: 12px;
+}
+.box-image-five{
+    border-radius: 12px;
+    background-image: url(../image/in-flight-seats.jpg);
+}
+.box-image-six{
+    border-radius: 12px;
+    background-image: url(../image/every-thing-about-imam-airprot.jpg);
+}
+.box-image-seven{
+    border-radius: 12px;
+    background-image: url(../image/usdollar.jpg); 
+}
+.box-image-eight{
+    border-radius: 12px;
+    background-image: url(../image/airport-terminal.jpg); 
+}
+.box-image-nine{
+    border-radius: 12px;
+    background-image: url(../image/download.jfif); 
+}
+.box-image-ten{
+    border-radius: 12px;
+    background-position:center;
+    background-image: url(../image/bottom-view-plane-sky_1134-408.webp);
+}
+.box-description-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-description-main{
+    margin: 0 20px;
+}
+.box-description-main h1{
+    margin-bottom:15px;
+}
+.box-description-main span{
+    line-height: 1.8;
+}
+.span-one{
+    color: gray;
+}
+#social{
+    margin: 10px 20px;
+    border-radius: 6px;
+    height: 40vh;
+    width: auto;
+    background-color:  gainsboro;
+    display: flex;
+    align-items: center;
+}
+#social .img-box{
+    height: 200px;
+    background-repeat: no-repeat;
+    background-image: url(../image/flightio-socials.webp);
+}
+#social .box-icon a{
+display: inline-block;
+padding: 10px;
+}
+.box-icon{
+    height: 100px;
+    width:450px;
+    padding: 8px ;
+    margin: 20px 0;
+}
+.social-bottom h6{
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+.icon{
+    background-color: #8493f4;
+    border-radius: 3px;
+}
+.box-icon a{
+    display: inline-block;
+    color:rgb(221, 97, 52);
+    transition: all 2s ease-out;
+}
+.box-icon i{
+    padding: 5px;
+}
+.box-icon a:hover{
+    color: #8493f4;
+    background-color: orange;
+    border: 1px outset orange;
+}
+#footer{
+    margin-right: 5rem;
+    margin-bottom: 6px;
+  }
+  .footer-box{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box-container-footer{
+    gap: 6rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+  .box-content-footer ul li{
+    display:block;
+  }
+  .box-content-footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .box-content-footer ul li input{
+    padding: 5px 10px;
+    outline: none;
+     border: none;
+     border-radius: 6px;
+     line-height: 20px;
+  }
+  .box-content-footer ul li input:hover{
+    box-shadow: 2px 1px 27px rgb(208, 208, 208);
+    background-color: rgb(238, 236, 236);
+  }
+  .copy-right{
+    height: 4rem;
+    background-color: rgb(238, 236, 236);
+  }
+  .copy-right p{
+    direction: ltr;
+    line-height:4rem; 
+    margin: 0 6px;
+  }

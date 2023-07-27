@@ -1,0 +1,284 @@
+body{
+  background-image: url(../image/photo_2023-05-16_11-09-33.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "shabnam";
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    font-family: "shabnam";
+}
+/* style */
+.tcenter{
+    text-align: center;
+}
+/* start */
+@font-face {
+    font-family: shabnam;
+    src: url("../font/Shabnam-Bold.eot");
+    src: url("../font/Shabnam.eot");
+    src: url("../font/Shabnam-Bold.ttf") format("truetype");
+    src: url("../font/Shabnam.woff") format("woff");
+}
+header .box ul li{
+    display: inline-block;
+    margin-left: 6px;
+}
+header .box ul li a{
+    display: inline-block;
+   color: rgb(8, 8, 92); ;
+   line-height: 50px;
+   margin-right: 20px;
+   padding: 8px 8px;
+   transition: all .4s ease-in-out;
+  
+}
+header .box ul li a:hover{
+    border-radius: 5px;
+    color: #fff;
+}
+.container-main{
+    display: flex;
+    align-items: center;
+    height: 550px;
+    width: 70%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    position: relative;
+}
+.box-image-login{
+    background-image: url(../image/photo_2023-05-16_11-03-21.bmp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 550px;
+    width:40%;
+    border-bottom-left-radius: 10px ;
+    border-top-left-radius: 10px;
+}
+ .box-login{
+    display:inline-block;
+    position: absolute;
+    height: 550px;
+    width:60%;
+    background-color: #ebebeb;
+    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px;
+}
+.container .box-login form #name,#pass,#email{
+   display:block;
+}
+.box-top-content {
+    margin: 15px;
+}
+.box-top-content a{
+    color:rgb(126, 72, 214);
+}
+
+.box-image-login h1{
+    display: inline-block;
+    padding: 30px 20px;
+    color: rgb(12, 12, 113);
+} 
+.box-botton-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 280px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-login *{
+    padding: 5px;
+    margin: 6px auto;
+    width: 60%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.5px solid rgba(255, 68, 0, 0.526);
+}
+.form-radio{
+    padding: 5px;
+    width: 60%;
+    margin: 6px auto;
+    color: rgb(172, 169, 169);
+    font-size: small;
+}
+.form-radio #terms{
+margin: 5px;
+vertical-align: middle;
+}
+.box-botton-content .btn-sub{
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    height: 12%;
+    width: 20%;
+    padding: 5px 4px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:orange;
+    box-shadow: 1px 2px 10px orange;
+    transition: all .2s ease-in;
+}
+.box-botton-content .btn-sub a{
+    color: #fff;
+}
+.box-login-bottem .box-login-bottem-text{
+    display: flex;
+    flex-direction: column;
+    margin: 6% 20%;
+    height: 15%;
+    width: auto;
+    position: absolute;
+    font-size: small;
+    color: rgb(172, 169, 169);
+}
+.box-social{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    width: 40px;
+}
+
+.btn-icon{
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+  
+}
+.icon-box .red{
+    background-color: rgba(214, 27, 27, 0.841);
+}
+.icon-box .blue{
+    background-color:rgb(69, 170, 234)
+}
+.icon-box .dark-blue{
+    background-color: rgb(9, 73, 145);
+}
+.btn-icon a{
+    font-size: 10px;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+}
+.box-login-bottem{
+    margin-top: 60px;
+}
+.form-login *:hover{
+    border-bottom:2px solid orangered;
+}
+.box-botton-content .btn-sub:hover{
+   border: 1px inset orange;
+   outline: 2px inset orangered;
+   outline-offset: .5px;
+}
+.icon-box .blue:hover{
+    border: 1px inset rgba(88, 88, 205, 0.769);
+}
+.icon-box .dark-blue:hover{
+    border: 1px inset rgb(24, 24, 84);
+}
+.icon-box .red:hover{
+    border: 1px inset darkred;
+}
+@media screen and (max-width:1224px) {
+    header nav .box ul li a{
+        font-size: small;
+    }
+    section{
+        min-height: 500px;
+        font-size: small;
+        color: teal;
+        width: 80% ;
+    }
+    input{
+        font-size: small;
+    }
+    img{
+        width: 60% !important; 
+    }
+
+}
+@media (max-width:1024px) {
+    header nav .box ul li a{
+        font-size: x-small;
+    }
+    section{
+        font-size:x-small;
+        color: aqua;
+        width: 60% ;
+    }
+    input{
+        font-size:x-small;
+    }
+    img{
+        width: 50%;
+    }
+.container-main{
+    width: 60%;
+}
+.btn-icon{
+   width: 50px;
+   margin: 5px;
+    }
+    .btn-icon a{
+    font-size: 4px;
+    }
+}
+@media (max-width:768px) {
+    header nav .box ul li a{
+        font-size:8px;
+        max-width:150px ;
+    }
+    section{
+        font-size:xx-small;
+        color: rgb(157, 255, 0);
+        width: 50% ;
+    }
+    input{
+        font-size:xx-small;
+    }
+    img{
+        width: 40%;
+        height: 70px;
+    }
+.container-main{
+    width: 50%;
+}
+.box-login-bottem{
+    visibility: hidden;
+}
+.form-radio{
+    font-size: 8px;
+}
+}

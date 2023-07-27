@@ -1,0 +1,537 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "shabnam",tahoma;
+    /* direction: rtl; */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url("../font/Shabnam-Bold.eot");
+    src: url("../font/Shabnam.eot");
+    src: url("../font/Shabnam-Bold.ttf") format("truetype");
+    src: url("../font/Shabnam.woff") format("woff");
+}
+.box-menu{
+  position: fixed;
+  height: 7rem;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;   
+  z-index: 1000;
+}
+.container-menu{
+  display: flex;
+  align-items: center;
+  background-color: #8493f4;
+  height: 6rem;
+  direction: rtl;
+  padding: 0 4rem;
+}
+.container-menu ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.container-menu ul li a{
+  display: inline-block;
+  color:black;
+text-decoration: none;
+margin-left: 2rem;
+padding: 1.1rem;
+border-radius: 5% 10% 5% 10%;
+transition: all .2s ease-in-out;
+}
+.container-menu ul li a:hover{
+  background-color: #e78f1c;
+}
+footer{
+  height: 50vh;
+  margin: 1rem 4rem;
+  direction: rtl;
+  padding: 9rem 0;
+}
+section{
+  height: 80vh;
+  margin: 1rem 4rem;
+  direction: rtl;
+  padding: 9rem 0;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    
+}
+.menu-navigation-list ul{
+    display: flex;
+   list-style: none;
+   align-items: center;
+   line-height: 6rem;
+   direction: rtl;
+   margin-right: 7rem;
+   padding: 0 4rem;
+}
+.menu-information{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:1001 ;
+}
+.menu-information a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 1.1rem;
+    margin: 0 4px;
+    border-radius: 5rem;
+    direction: rtl;
+} 
+.menu-information *{
+    margin-left: .75rem;
+   margin-top: 15px;
+}
+.menu-information p{
+  color: orangered;
+  line-height: 6px;
+}
+.item-login{
+background-color: whitesmoke;
+    border-radius: .80rem;
+    transition: all .2s ease-in;
+}
+.item-peigiri{
+    border:1px solid orangered;
+    border-radius: .80rem;
+    transition: all .2s ease-in;
+}
+  .item-login:hover{
+    background-color: #e78f1c;
+    color: white;
+  }
+  .item-peigiri:hover{
+    background-color: orangered;
+    border: none;
+  }
+  .item-phone{
+    color: white;
+  }
+  .menu-navigation-list li a:hover{
+border-top: 2px solid white;
+  }
+  .form-input{
+    direction: rtl;
+    height: 50%;
+    padding: 0 20%;
+}
+  .form-input h1{
+    color:rgb(6, 6, 69);
+    font-size: 2rem;
+    padding-top: 7rem;
+  }
+.box-form{
+  margin-top: 2rem;
+    height: 20rem;
+    width: 50rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid orangered;
+    border-radius: 2rem;
+    position: relative;
+}
+/* .box-form-button{
+     display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap:2rem; 
+} */
+.box-form-button-container ul{
+  display: flex;
+  list-style: none;
+}
+.box-form-button-container ul li a{
+  text-decoration: none;
+  display: inline-block;
+   margin:10px;
+   padding: .80rem 1rem;
+   color: black;
+   border-radius: 1.1rem;
+   transition: all .2s ease-out;
+}
+.line-box{
+width: 48rem;
+height: .01rem;
+background-color: orange;
+margin: 0 12px;
+}
+.box-form-button-container ul li a:hover{
+  background-color: #8493f4;
+  color: #f49213;
+}
+.box-search{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content:center;
+  flex-grow: 1;
+}
+.form-serch{
+  display: flex;
+  flex-direction: row;
+  margin:2rem 1rem;
+  padding: 1rem;
+}
+.form-serch *{
+  margin-left: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.1rem;
+  outline: none;
+  padding: 2rem 1rem;
+}
+.input-box-search{
+  background-color:gainsboro;
+  transition: all .1s linear;
+}
+.form-serch .input-box-search:hover{
+  box-shadow: 2px 1px 27px rgb(208, 208, 208);
+  background-color: rgb(238, 236, 236);
+}
+.button-box-search{
+  background-color: rgb(234, 82, 27);
+  transition: all .2s linear;
+}
+.button-box-search:hover{
+  background-color: #e78f1c;
+box-shadow:2px 1px 27px rgb(234, 82, 27) ;
+}
+.header-main::after{
+  content: "";
+  /* background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;  */
+}
+.section-title{
+  color: #082461;
+}
+.section-sub-titel{
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+}
+.Quick-search{
+  border: 1px solid #8493f4;
+}
+.box-Quick-search-left{
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  flex-direction: row;
+}
+.box-quick-link a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 1rem;
+  background-color: gainsboro;
+  color: black;
+  border-radius: .80rem;
+  padding: 15px ;
+  transition: all .2s ease-in;
+}
+.box-quick-link a:hover{
+background-color: #082461;
+ box-shadow: 2px 1px 27px rgb(208, 208, 208);
+color: #e78f1c;
+}
+ .box-airplan-search{
+  margin-bottom: 0;
+  padding: 0;
+margin-top: 2rem;
+display: flex;
+align-items: center;
+flex-grow: 1;
+justify-content: center;
+}
+.box-airplan-container{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+.option-image{
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+  border-radius: 1.1rem;
+}
+.option-image-top{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-top:0;
+}
+.top-image{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.option-image-bottom{
+  display: flex;
+align-items:flex-end;
+justify-content: space-between;
+margin-bottom: 6px ;
+
+}
+.option-image-bottom .text-gray{
+  color: gray;
+  font-size: .60rem;
+}
+.option-image-bottom h5{
+  color: #082461;
+}
+.option-image-botoon-right{
+padding-left:6px;
+}
+.option-image:hover{
+  box-shadow: 2px 1px 27px rgb(208, 208, 208);
+  background-color: rgb(238, 236, 236);
+}
+.section-title>a{
+  text-decoration: none;
+  display: inline-block;
+   margin:10px;
+   padding: .80rem 1rem;
+   color: black;
+   border-radius: 1.1rem;
+   transition: all .2s ease-out;
+}
+.section-title>a:visited{
+  color: #082461;
+}
+.section-title>a:hover{
+  background-color: #e78f1c;
+}
+.section-sub-titel>h3{
+  margin-bottom: 2px;
+}
+.suggestion-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.seggestion-box-container{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  vertical-align: middle;
+  grid-template-areas: "pic1 pic2 pic3 pic4"
+                       "pic1 pic2 pic5 pic4";
+  gap: 1rem;
+}
+.suggestion-image{
+  height: 100%;
+  width: 100%; 
+  vertical-align: middle;
+  border-radius: 1.1rem;
+  transition: all .5s ease-in-out;
+  box-shadow: inset 4px 29px 64px 10px rgba(0,0,0,0.5);
+}
+.image1{
+  grid-area: pic1;
+}
+.image2{
+  grid-area: pic2;
+  height:11rem ;
+  width: 15rem;
+}
+.image3{
+  grid-area: pic3;
+}
+.image4{
+  grid-area: pic4;
+}
+.image5{
+  grid-area: pic5;
+  height:11rem ;
+  width: 15rem;
+}
+.segesstion-box-content{
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.seggestion-box-text{
+  color: white;
+  direction: rtl;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: .25rem .60rem;
+}
+.segesstion-box-image{
+vertical-align: middle;
+}
+.box-seggestion-dubble-image{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.suggestion-image:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.titel-advatage{
+  text-align: center;
+  color: #082461;
+}
+.advantage-container{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+.advantage-box{
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+.advantage-box img{
+  height: 10rem;
+  width: 10rem;
+  vertical-align: middle;
+}
+.box-advantage-content{
+  display: flex;
+ align-items: center;
+  padding:2rem ;
+  margin: 1rem;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+.box-advantage-text{
+  display: inline-block;
+  margin-top: 4rem;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+@media (max-width:600px){
+ header, section{
+    width: 60%;
+    padding: 0 20%;
+  }
+  img{
+    height: 4rem;
+    width: 2rem;
+  }
+}
+.background{
+  vertical-align:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/view-air-plane-wing-during-take-off-landing_1359-539.webp);
+}
+.box-advantage-content:hover{
+  box-shadow: 2px 1px 27px rgb(208, 208, 208);
+  background-color: rgb(238, 236, 236);
+}
+#Quick-search{
+  padding: 4rem 2rem;
+  /* border: 1px solid orangered; */
+  background-color: rgb(245, 244, 244);
+  border-radius: 2rem;
+  margin: 2rem;
+}
+input{
+font-family: "shabnam",tahoma;
+}
+#ask{
+  margin-top: 100px;
+ 
+}
+.box-section-ask{
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgb(245, 244, 244);
+  padding: 20px;
+}
+.content-box-ask{
+  display: grid;
+  grid-template-columns:repeat(2,1fr) ;
+  grid-template-rows: repeat(5,1fr);
+}
+.box-ask{
+  margin-left: 20px;
+  text-align: justify;
+}
+.box-ask span{
+  font-size: .75rem;
+}
+#footer{
+  margin-top: 10rem;
+}
+.footer-box{
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-container-footer{
+  gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+}
+.box-content-footer ul li{
+  display:block;
+}
+.box-content-footer ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  margin-top: 3px;
+}
+.box-content-footer ul li input{
+  padding: 5px 10px;
+  outline: none;
+   border: none;
+   border-radius: 6px;
+   line-height: 20px;
+}
+.box-content-footer ul li input:hover{
+  box-shadow: 2px 1px 27px rgb(208, 208, 208);
+  background-color: rgb(238, 236, 236);
+}
+.copy-right{
+  height: 4rem;
+  background-color: rgb(238, 236, 236);
+}
+.copy-right p{
+  direction: ltr;
+  line-height:4rem; 
+  margin: 0 6px;
+}

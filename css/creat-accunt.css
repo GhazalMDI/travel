@@ -1,0 +1,109 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    --bg-color-one:  #8493f4;
+    --bg-color:#f9f9f9;
+}
+body{
+    font-family: "shabnam",tahoma;
+    direction: rtl;
+    background-color: #fbc553;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url("../font/Shabnam-Bold.eot");
+    src: url("../font/Shabnam.eot");
+    src: url("../font/Shabnam-Bold.ttf") format("truetype");
+    src: url("../font/Shabnam.woff") format("woff");
+}
+#navigation{
+  background-color:var(--bg-color-one);
+}
+#navigation ul li{
+    display: inline-block;
+    margin: 0 auto;
+}
+#navigation ul li a{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0 10px;
+    text-decoration: none; 
+    color: orangered;
+    line-height: 60px;
+    transition: all .2s ease-out;
+}
+#navigation ul li a:hover{
+    background-color: #fbc553;
+    color:#8493f4;
+    border-radius: 6px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    background-color: #f9f9f9;
+    margin:  10px 50px;
+    position: relative;
+    border-radius: 5%;
+}
+.flex-input{
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem;
+    flex-basis: 400px;
+    width: 100%;
+    
+}
+.box-create{
+    position: relative;
+}
+.container h1{
+position:absolute;
+top: 0;
+right: 0;
+left: 0;
+margin: 2rem;
+}
+.flex-input input{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    background-color: transparent;
+    border-bottom: 0.5px solid gray;
+    margin: 4px 0;
+    width: 100%;
+    display: inline-block;
+}
+.box-image img{
+    border-radius: 80% 40% 30% 50%;
+    margin:  0 25px;
+}
+.flex-input input:hover{
+    border-bottom: 4px outset var(--bg-color-one);
+    border-top: 4px inset var(--bg-color-one);
+}
+.box-create button{
+    display: inline-block;
+    padding: 8px 12px ;
+    font-family: shabnam;
+    position: absolute;
+    right: 300px;
+    bottom: -70px;
+    font-size: small;
+    width: 120px;
+    border: 1px inset var(--bg-color-one);
+    outline: 0;
+    background-color: #8493f4;
+    border-radius: 3px;
+    transition: all 2s ease-in-out;
+}
+.box-create button:hover{
+    box-shadow: 1px 2px 25px var(--bg-color-one);
+}
